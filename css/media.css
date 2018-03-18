@@ -1,0 +1,26 @@
+@media screen and (max-width: 705px){
+
+    header .header-container {
+        flex-direction: column;
+    }
+
+    header .header-container .logo {
+        margin-bottom: 15px;
+    }
+
+    main {
+        justify-content: space-around;
+    }
+} 
+
+@media screen and (max-width: 483px){
+
+    .header-container .header-menu li a {
+        padding: 15px;
+        font-size: 13px;
+    }
+
+    .image-form-container form.select-image input[type="file"] {
+        margin-bottom: 15px;
+    }
+}
