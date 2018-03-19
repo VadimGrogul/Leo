@@ -8,6 +8,10 @@
         margin-bottom: 15px;
     }
 
+    .gallery-container {
+        margin: 30px 20px;
+    }
+
     main {
         justify-content: space-around;
     }
