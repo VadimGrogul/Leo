@@ -124,6 +124,8 @@ main {
 main .photos .photo-loupe {
     text-align: center;
     position: relative;
+    height: 190px;
+    overflow: hidden;
 }
 
 main .photos .photo-loupe:hover {
@@ -131,12 +133,12 @@ main .photos .photo-loupe:hover {
 }
 
 main .photos .photo-loupe:hover .loupe {
-    display: block;
+    opacity: 1;
 }
 
 main .photos .photo-loupe .loupe {
     position: absolute;
-    display: none;
+    opacity: 0;
     top: 45%;
     left: 45%;
 }

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Photo Cage app</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
@@ -45,8 +46,8 @@
     <main>
         <div class="photos">
             <div class="photo-loupe">
-                <img class="image" src="images/1.jpg" alt="Photo">
-                <img class="loupe" src="images/loupe.png" alt="">
+                <a href="images/z.jpg" class="image-link" data-fancybox="slider" data-caption="я на свадьбе"><img class="image" src="images/zMin.jpg" alt="Photo"></a>
+                <img class="loupe" src="images/loupe.png" alt="#">
             </div>
             <div class="about-photo">
                 <p class="photo-name">Lorem, ipsum dolor.</p>
@@ -74,7 +75,7 @@
         </div>
         <div class="photos">
             <div class="photo-loupe">
-                <img class="image" src="images/2.jpg" alt="Photo">
+                <a href="images/2.jpg" class="image-link" data-fancybox="slider"><img class="image" src="images/2.jpg" alt="Photo"></a>
                 <img class="loupe" src="images/loupe.png" alt="">
             </div>
             <div class="about-photo">
@@ -103,7 +104,7 @@
         </div>
         <div class="photos">
             <div class="photo-loupe">
-                <img class="image" src="images/3.jpg" alt="Photo">
+                <a href="images/3.jpg" class="image-link" data-fancybox="slider"><img class="image" src="images/3.jpg" alt="Photo"></a>
                 <img class="loupe" src="images/loupe.png" alt="">
             </div>
             <div class="about-photo">
@@ -132,7 +133,7 @@
         </div>
         <div class="photos">
             <div class="photo-loupe">
-                <img class="image" src="images/4.jpg" alt="Photo">
+                <a href="images/4.jpg" class="image-link" data-fancybox="slider"><img class="image" src="images/4.jpg" alt="Photo"></a>
                 <img class="loupe" src="images/loupe.png" alt="">
             </div>
             <div class="about-photo">
@@ -161,7 +162,7 @@
         </div>
         <div class="photos">
             <div class="photo-loupe">
-                <img class="image" src="images/5.jpg" alt="Photo">
+                <a href="images/5.jpg" class="image-link" data-fancybox="slider"><img class="image" src="images/5.jpg" alt="Photo"></a>
                 <img class="loupe" src="images/loupe.png" alt="">
             </div>
             <div class="about-photo">
@@ -190,7 +191,7 @@
         </div>
         <div class="photos">
             <div class="photo-loupe">
-                <img class="image" src="images/6.jpg" alt="Photo">
+                <a href="images/6.jpg" class="image-link" data-fancybox="slider"><img class="image" src="images/6.jpg" alt="Photo"></a>
                 <img class="loupe" src="images/loupe.png" alt="">
             </div>
             <div class="about-photo">
@@ -219,7 +220,7 @@
         </div>
         <div class="photos">
             <div class="photo-loupe">
-                <img class="image" src="images/7.jpg" alt="Photo">
+                <a href="images/7.jpg" class="image-link" data-fancybox="slider"><img class="image" src="images/7.jpg" alt="Photo"></a>
                 <img class="loupe" src="images/loupe.png" alt="">
             </div>
             <div class="about-photo">
@@ -248,7 +249,7 @@
         </div>
         <div class="photos">
             <div class="photo-loupe">
-                <img class="image" src="images/8.jpg" alt="Photo">
+                <a href="images/8.jpg" class="image-link" data-fancybox="slider"><img class="image" src="images/8.jpg" alt="Photo"></a>
                 <img class="loupe" src="images/loupe.png" alt="">
             </div>
             <div class="about-photo">
@@ -277,7 +278,7 @@
         </div>
         <div class="photos">
             <div class="photo-loupe">
-                <img class="image" src="images/9.jpg" alt="Photo">
+                <a href="images/9.jpg" class="image-link" data-fancybox="slider"><img class="image" src="images/9.jpg" alt="Photo"></a>
                 <img class="loupe" src="images/loupe.png" alt="">
             </div>
             <div class="about-photo">
@@ -306,7 +307,7 @@
         </div>
         <div class="photos">
             <div class="photo-loupe">
-                <img class="image" src="images/10.jpg" alt="Photo">
+                <a href="images/10.jpg" class="image-link" data-fancybox="slider"><img class="image" src="images/10.jpg" alt="Photo"></a>
                 <img class="loupe" src="images/loupe.png" alt="">
             </div>
             <div class="about-photo">
@@ -335,7 +336,7 @@
         </div>
         <div class="photos">
             <div class="photo-loupe">
-                <img class="image" src="images/11.jpg" alt="Photo">
+                <a href="images/11.jpg" class="image-link" data-fancybox="slider"><img class="image" src="images/11.jpg" alt="Photo"></a>
                 <img class="loupe" src="images/loupe.png" alt="">
             </div>
             <div class="about-photo">
@@ -364,7 +365,7 @@
         </div>
         <div class="photos">
             <div class="photo-loupe">
-                <img class="image" src="images/12.jpg" alt="Photo">
+                <a href="images/12.jpg" class="image-link" data-fancybox="slider"><img class="image" src="images/12.jpg" alt="Photo"></a>
                 <img class="loupe" src="images/loupe.png" alt="">
             </div>
             <div class="about-photo">
@@ -397,8 +398,10 @@
         <p class="author">&copy; 2018 Photocage app powered by grogulvadim@gmail.com</p>
     </footer>
 
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>  
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script> 
     <script type="text/javascript" src="js/menu-tabs.js"></script>  
+    <script type="text/javascript" src="js/popup-gallery.js"></script>  
 
 </body>
 </html>
