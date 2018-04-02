@@ -1,3 +1,9 @@
+@media screen and (max-width: 1006px){
+    .nature-photos ul.photo-list {
+        justify-content: space-around;
+    }
+}
+
 @media screen and (max-width: 705px){
 
     header .header-container {
